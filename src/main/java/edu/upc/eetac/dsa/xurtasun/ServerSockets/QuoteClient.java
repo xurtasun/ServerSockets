@@ -14,6 +14,7 @@ public class QuoteClient {
 
             // send request
         byte[] buf = new byte[256];
+       
         InetAddress address = InetAddress.getByName("10.89.52.206");
         DatagramPacket packet = new DatagramPacket(buf, buf.length, address, 4445);
         socket.send(packet);
